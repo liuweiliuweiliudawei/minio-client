@@ -1,0 +1,159 @@
+{
+  "groups": [
+    {
+      "name": "spring.minio",
+      "type": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties"
+    },
+    {
+      "name": "spring.minio.watermark",
+      "type": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.minio.access-key",
+      "type": "java.lang.String",
+      "description": "Access key (login) on Minio instance",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "minioadmin"
+    },
+    {
+      "name": "spring.minio.bucket",
+      "type": "java.lang.String",
+      "description": "Bucket name for the application. The bucket must already exists on Minio.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "test"
+    },
+    {
+      "name": "spring.minio.check-bucket",
+      "type": "java.lang.Boolean",
+      "description": "Check if the bucket exists on Minio instance. Settings this false will disable the check during the application context initialization. This property should be used for debug purpose only, because operations on Minio will not work during runtime.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.minio.connect-timeout",
+      "type": "java.time.Duration",
+      "description": "Define the connect timeout for the Minio Client.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "10s"
+    },
+    {
+      "name": "spring.minio.create-bucket",
+      "type": "java.lang.Boolean",
+      "description": "Will create the bucket if it do not exists on the Minio instance.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.minio.metric-name",
+      "type": "java.lang.String",
+      "description": "Metric configuration prefix which are registered on Actuator.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "minio.storage"
+    },
+    {
+      "name": "spring.minio.read-timeout",
+      "type": "java.time.Duration",
+      "description": "Define the read timeout for the Minio Client.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "10s"
+    },
+    {
+      "name": "spring.minio.secret-key",
+      "type": "java.lang.String",
+      "description": "Secret key (password) on Minio instance",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "minioadmin"
+    },
+    {
+      "name": "spring.minio.secure",
+      "type": "java.lang.Boolean",
+      "description": "If the scheme is not provided in {@code url} property, define if the connection is done via HTTP or HTTPS.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.minio.url",
+      "type": "java.lang.String",
+      "description": "URL for Minio instance. Can include the HTTP scheme. Must include the port. If the port is not provided, then the port of the HTTP is taken.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "http:\/\/129.28.165.34:9000\/"
+    },
+    {
+      "name": "spring.minio.watermark.alpha",
+      "type": "java.lang.Float",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0.3
+    },
+    {
+      "name": "spring.minio.watermark.color-blue",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.minio.watermark.color-green",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.minio.watermark.color-red",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.minio.watermark.font-name",
+      "type": "java.lang.String",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": "PingFang SC Regular"
+    },
+    {
+      "name": "spring.minio.watermark.font-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 36
+    },
+    {
+      "name": "spring.minio.watermark.image-ratio",
+      "type": "java.lang.Float",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0.1
+    },
+    {
+      "name": "spring.minio.watermark.image-width",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 800
+    },
+    {
+      "name": "spring.minio.watermark.text",
+      "type": "java.lang.String",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration"
+    },
+    {
+      "name": "spring.minio.watermark.x-move",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.minio.watermark.y-move",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.WatermarkConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.minio.write-timeout",
+      "type": "java.time.Duration",
+      "description": "Define the write timeout for the Minio Client.",
+      "sourceType": "com.jlefebure.spring.boot.minio.config.MinioConfigurationProperties",
+      "defaultValue": "60s"
+    }
+  ],
+  "hints": []
+}

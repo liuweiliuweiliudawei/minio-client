@@ -1,0 +1,5 @@
+com.jlefebure.spring.boot.minio
+com.jlefebure.spring.boot.minio.config
+com.jlefebure.spring.boot.minio.enums
+com.jlefebure.spring.boot.minio.notification
+com.jlefebure.spring.boot.minio.util

@@ -1,0 +1,13 @@
+com\jlefebure\spring\boot\minio\util\ImageUtil.class
+com\jlefebure\spring\boot\minio\notification\MinioNotification.class
+com\jlefebure\spring\boot\minio\config\WatermarkConfiguration.class
+com\jlefebure\spring\boot\minio\MinioMetricConfiguration.class
+com\jlefebure\spring\boot\minio\MinioException.class
+META-INF\spring-configuration-metadata.json
+com\jlefebure\spring\boot\minio\MinioNotificationConfiguration.class
+com\jlefebure\spring\boot\minio\MinioHealthIndicator.class
+com\jlefebure\spring\boot\minio\config\MinioConfiguration.class
+com\jlefebure\spring\boot\minio\MinioFetchException.class
+com\jlefebure\spring\boot\minio\MinioService.class
+com\jlefebure\spring\boot\minio\config\MinioConfigurationProperties.class
+com\jlefebure\spring\boot\minio\enums\Image.class
